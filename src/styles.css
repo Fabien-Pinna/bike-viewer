@@ -1,0 +1,8 @@
+@import "tailwindcss";
+:root{font-family:"Segoe UI",Arial,sans-serif;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+body{margin:0}
+button{font:inherit;cursor:pointer;transition:background .18s,border-color .18s,color .18s,box-shadow .18s}
+button,a{touch-action:manipulation}
+button:disabled{cursor:default}
+h1,h2,p{margin:0}
