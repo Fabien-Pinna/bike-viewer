@@ -1,3 +1,4 @@
+import { useCtrlWheelZoom } from '../../hooks/useCtrlWheelZoom.js';
 import { useEffect, useMemo, useRef } from 'react';
 import { useThree } from '@react-three/fiber';
 import { Html, Line, OrbitControls } from '@react-three/drei';
@@ -44,6 +45,7 @@ const Bike = ({ model, position, overlay, dimensions, alignment, retry }) => {
 
 /** Display original metric geometry with a shared orthographic camera. */
 export const BikeScene = ({ models, mode, view, dimensions, alignment, reset, retry }) => {
+  useCtrlWheelZoom();
   const controls = useRef();
   const { camera, size, invalidate } = useThree();
   const count = models.length;
